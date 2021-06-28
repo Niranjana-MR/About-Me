@@ -23,6 +23,15 @@ a::after {
     color: #ff7367;
 }
 
+p {
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.pd-1 {
+    padding: 1rem;
+}
+
 #navbar {
     padding: 2rem 2rem 2rem 1rem;
     display: grid;
@@ -75,12 +84,26 @@ a::after {
     width: 30rem;
     height: 18rem;
     margin-top: 8rem;
+    text-decoration: none;
 }
 
 .project-container:hover {
     cursor: pointer;
     transform: scale(1.02);
     border: 0.2rem solid;
+}
+
+.profile-link,
+.project-link:hover,
+.project-link::after {
+    text-decoration: none;
+}
+
+.project-footer {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 4rem;
 }
 
 #more-projects {
@@ -98,7 +121,7 @@ a::after {
     padding: 1rem 2rem;
 }
 
-#github-link:hover{
+#github-link:hover {
     cursor: pointer;
     border: 0.2rem solid;
     transform: scale(1.05);
