@@ -31,6 +31,7 @@ a::after {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 #welcome-section {
@@ -69,16 +70,81 @@ a::after {
 }
 
 .project-container {
-    border: 1px solid;
+    border: 0.1rem solid;
     padding: 1rem;
     width: 30rem;
+    height: 18rem;
+    margin-top: 8rem;
+}
+
+.project-container:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    border: 0.2rem solid;
 }
 
 #more-projects {
     display: grid;
     height: 4rem;
-    width: 12rem;
     grid-template-columns: 1fr;
     justify-self: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    align-content: center;
+    justify-items: center;
+}
+
+#github-link {
+    border: 0.1rem solid #ff7367;
+    padding: 1rem 2rem;
+}
+
+#github-link:hover{
+    cursor: pointer;
+    border: 0.2rem solid;
+    transform: scale(1.05);
+}
+
+#contact {
+    display: grid;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 5rem;
+    grid-template-rows: 0.2fr 0.2fr 2fr;
+    grid-row-gap: 1rem;
+}
+
+#contact-header {
+    display: grid;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+#contact-tagline {
+    display: grid;
+    justify-content: center;
+}
+
+#profile-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.link {
+    display: grid;
+    height: 3rem;
+    justify-content: center;
+    align-content: center;
+    justify-self: baseline;
+}
+
+.profile-link {
+    border: 0.1rem solid #ff7367;
+    padding: 1rem 2rem;
+}
+
+.profile-link:hover {
+    cursor: pointer;
+    border: 0.2rem solid #ff7367;
+    transform: scale(1.05);
 }
