@@ -1,4 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #002a45;
+    color: #ff7367;
+}
+
+a {
+    text-decoration: none;
+    color: #ff7367;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a::after {
+    text-decoration: none;
+    color: #ff7367;
+}
+
+#navbar {
+    padding: 2rem 2rem 2rem 1rem;
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr 1fr;
+    height: 3vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#welcome-section {
+    padding-top: 10rem;
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 3fr;
+}
+
+#name {
+    display: grid;
+    align-content: center;
+    margin-top: 8rem;
+    width: 24rem;
+    height: 4rem;
+}
+
+#projects {
+    display: grid;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 5rem;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+#project-header {
+    display: grid;
+    justify-content: center;
+}
+
+.project-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+}
+
+.project-container {
+    border: 1px solid;
+    padding: 1rem;
+    width: 30rem;
+}
+
+#more-projects {
+    display: grid;
+    height: 4rem;
+    width: 12rem;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    margin-top: 2rem;
 }
